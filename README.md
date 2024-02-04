@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Department Website Using React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://github.com/himanshugalav1/Department-Website/website.png)
+
 
 ## Available Scripts
 
