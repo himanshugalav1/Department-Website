@@ -1,6 +1,8 @@
 # Department Website Using React
 
-![image](https://github.com/himanshugalav1/Department-Website/website.png)
+<div>
+  <img src="website.png">
+</div>
 
 
 ## Available Scripts
