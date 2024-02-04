@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dark Mode Toggle with SVG Logo</title>
+    <style>
+        /* Default light mode styles using CSS variables */
+        :root {
+            --background-color: #f4f4f4;
+            --text-color: #333;
+            --logo-color: blue; /* Default color for the logo */
+        }
+
+        /* Dark mode styles using CSS variables */
+        body.dark-mode {
+            --background-color: #333;
+            --text-color: #fff;
+            --logo-color: red; /* Dark mode color for the logo */
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        .toggle-button {
+            background-color: #333;
+            border: none;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+        
+        .toggle-button.dark-mode {
+            background-color: #ccc;
+            color: #333;
+        }
+
+        .logo {
+            fill: var(--logo-color); /* Apply the color to the logo using a CSS variable */
+        }
+    </style>
+</head>
+<body>
+    <h1>Dark Mode Toggle with SVG Logo</h1>
+    <button class="toggle-button" id="dark-mode-toggle">Toggle Dark Mode</button>
+    <svg class="logo" width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" />
+    </svg>
+
+    <script>
+        const darkModeToggle = document.getElementById("dark-mode-toggle");
+        const body = document.body;
+        const toggle = document.querySelector('.toggle-button');
+
+        darkModeToggle.addEventListener("click", () => {
+            body.classList.toggle("dark-mode");
+            toggle.classList.toggle("dark-mode");
+        });
+    </script>
+</body>
+</html>
